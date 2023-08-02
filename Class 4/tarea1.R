@@ -40,18 +40,13 @@ result_2 <- fibonacci_order_3(6)
 
 # Ejemplo 3 (ejemplo incorrecto):
 # n = 8
-# f(8) = f(7) + f(6) + f(5) = 24 + 13 + 7 = 44 (Valor esperado: 45, esto será incorrecto)
+# f(8) = f(7) + f(6) + f(5) = 24 + 13 + 7 = 44
 result_3 <- fibonacci_order_3(8)
 
 # Carga del paquete assertthat
 library(assertthat)
 
 # Aserciones (assert) para comprobar los resultados con mensajes personalizados
-assert_that(result_1 == 4, "El resultado para n = 4 es incorrecto")
-assert_that(result_2 == 13, "El resultado para n = 6 es incorrecto")
-assert_that(result_3 == 45, "El resultado para n = 8 es incorrecto")
-
-# Muestra los resultados
-print(result_1)
-print(result_2)
-print(result_3)
+assertthat::assert_that(result_1 == 4, msg = "El resultado para n = 4 es incorrecto")
+assertthat::assert_that(result_2 == 13, msg = "El resultado para n = 6 es incorrecto")
+assertthat::assert_that(result_3 == 44, msg = "El resultado para n = 8 es incorrecto")
