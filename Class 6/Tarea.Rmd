@@ -1,0 +1,80 @@
+---
+title: "My R Markdown Document"
+output: html_document
+spellcheck: false
+---
+
+# Task: Polynomial Regression Analysis in R
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Perform a polynomial regression analysis using the mtcars dataset in R. The database contains information on different car models, including horsepower (hp) and miles per gallon (mpg) performance.
+
+**1. Fit a simple linear regression model**.
+
+Complete the code to fit a simple linear regression model. Use the lm() function to fit the model.
+
+```{r task1}
+# TODO
+
+```
+
+**2. Create the scatter plot with the regression line**.
+
+Complete the code to create the scatter plot to show the relationship between the variables hp and mpg \# Use the plot() function to create the scatter plot. \# Use the abline() function to add the regression line to the graph.
+
+```{r task2, echo=T}
+# TODO
+```
+
+**3. Make predictions with the simple linear model**
+
+Complete the code to make predictions for new horsepower (hp) quantities
+
+Create a new dataframe with the new hp quantities using the data.frame() function.
+
+Use the predict() function to make predictions using the model fitted in task 1.
+
+```{r task3, echo=FALSE}
+# TODO
+
+```
+
+**4. Fit a cubic regression model**.
+
+Complete the code to fit a cubic regression model
+
+Use the lm() function to fit the cubic model.
+
+Note that to include polynomial terms, the \^ function must be used to raise the variables.
+
+```{r task4, echo=FALSE}
+# TODO
+
+```
+
+**5. Create the scatter plot with the cubic regression curve**.
+
+Complete the code to create the scatter plot showing the relationship between hp and mpg
+
+Use the plot() function to create the scatter plot.
+
+Use the lines() function to add the cubic regression curve to the graph.
+
+```{r task5, echo=FALSE}
+# TODO
+
+```
+
+**6. Analyze and compare the results of both regression models**.
+
+Complete the code to analyze and compare the results of both regression models. Discuss the suitability of each model to represent the relationship between the variables.
+
+```{r task6, echo=FALSE}
+# TODO
+
+```
+
+Additional instructions: - Be sure to include appropriate titles, labels, and colors on graphs for better visual representation. - Provide clear and detailed explanations in the code comments to facilitate the understanding of the analysis performed.
