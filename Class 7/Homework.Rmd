@@ -1,0 +1,50 @@
+---
+title: "Class 7"
+output: html_document
+spellcheck: false
+---
+
+# Task: Reading csv and Excel files in R
+
+```{r setup}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Using the library readxl, we can read Excel files into R. The function read_excel() is used to read Excel files.
+
+**1 - Reading Excel file**
+
+Open the excel file called "sample.xlsx" and read the data into R. Read both sheets and print out its content.
+
+```{r}
+library(readxl)
+# TODO
+
+```
+
+**2 - Calculate variance and standard deviation**
+
+For columns age and duration, calculate the variance and standard deviation. Print them out using variables and the function print().
+
+```{r}
+# TODO
+
+```
+
+**3 - Plot the data**
+
+Plot the data from the first sheet using age column as x-axis and duration column as y-axis.
+
+```{r}
+# TODO
+
+```
+
+**4 - Linear regression**
+
+Perform a linear regression for the previous plot. Plot the points and the linear regression line.
+
+```{r}
+# TODO
+
+```
