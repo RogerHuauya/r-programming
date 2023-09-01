@@ -1,0 +1,34 @@
+---
+title: "Homework class 8"
+output: html_document
+---
+
+Create an vector of 1000 in size in which you simulate dice outcomes
+
+```{r}
+#TODO
+
+```
+
+Plot the probability distribution of the simlation vector you have generated.
+
+```{r}
+#TODO
+
+```
+
+Generate 100000 points using a gaussian distribution with mean 25 and standard deviation 2
+
+```{r}
+#TODO
+
+```
+
+Write two estimators: the first one should take 10 samples and get the average of them, then you should replicate this 30000 times; the second one should take 30 samples instead.
+
+```{r}
+#TODO
+
+```
+
+Plot each estimators PDF (probabilistic density distribution) and conclude which one is the best estimator.

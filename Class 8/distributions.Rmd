@@ -1,0 +1,60 @@
+---
+title: "Chi cuadrada 10 soles"
+output: html_document
+---
+
+Goodnotes link: <https://share.goodnotes.com/s/lIZ8aEFyJBNgMv9xGNJu8A>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Chi cuadrada 10 soles
+
+```{r Chisq_plot, fig.width = 14, fig.height = 8}
+curve(dchisq(x, df=12), 
+    from = 0,
+    to = 50,
+    ylab = "Densidad",
+    xlab = "Ingresos por hora"
+    )
+```
+
+## Establecer la semilla
+
+```{r seed_set, include=FALSE}
+set.seed(1)
+```
+
+## Sampling
+
+```{r sampling, echo=FALSE}
+rsamp <- rchisq(n = 100, df = 12)
+print(rsamp)
+```
+
+## Sampling y estimar
+
+```{r sampling and estimation, echo=FALSE}
+rsamp <- rchisq(n = 100000000, df = 12)
+cat("Media de los datos sampleados:", mean(rsamp),"<-> Media Real o de la poblacion:", 12, "<-> Error",  abs(12 - mean(rsamp)))
+```
+
+## Distribución Normal
+
+```{r normal_dist, echo=FALSE}
+pop = rnorm(10000, 10, 1) # (cantidad, media = mu = promedio = laparte central, desviacion standard)
+print(pop)
+```
+
+## Representacion grafica
+
+```{r Normal_plot, fig.width = 14, fig.height = 8}
+plot(density(pop))
+```
+
+## Prueba de promedios
+
+\`\`\`{r test_means, echo=FALSE} est1 \<- replicate(expr = mean(sample(x=pop, size = 5)), n = 25000) est2 \<- replicate(expr = mean(sample(x=pop, size = 25)), n = 25000)
+
+fo \<- replicate(expr = sample(x=pop, size = 5)[1], n = 25000)
